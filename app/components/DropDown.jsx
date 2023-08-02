@@ -36,6 +36,12 @@ const DropDown = () => {
                             <span>SPORTS</span>
                         </Link>
                     </li>
+                    <li className='z-50 bg-news-red cursor-pointer h-full flex justify-start items-center w-full p-4 hover:bg-news-black'>
+                        <Link className='font-bold text-lg flex items-center gap-1' href="/">
+                            <i class='bx bx-laptop' ></i>
+                            <span>TECHNOLOGY</span>
+                        </Link>
+                    </li>
                 </div>
             }
         </>
