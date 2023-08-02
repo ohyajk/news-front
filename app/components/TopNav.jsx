@@ -5,13 +5,13 @@ const TopNav = () => {
 
     return (
         // TOP NAVIGATION
-        <div className='h-10 bg-news-black flex justify-center items-center'>
+        <div className='h-10 px-4 md:px-8 bg-news-black flex justify-center items-center border-b-2 border-news-white/50'>
             <div className="w-full max-w-7xl flex justify-between">
 
                 <div>
                     <Time />
                 </div>
-                <ul className="flex gap-4">
+                <ul className="hidden md:flex gap-4 ">
                     <li>
                         <Link className="hover:text-news-red" href='/contact'>ADVERTISE</Link>
                     </li>

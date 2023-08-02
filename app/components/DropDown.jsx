@@ -8,7 +8,7 @@ const DropDown = () => {
 
     return (
         <>
-            <li onMouseEnter={() => setShowDropDown(true)} onMouseLeave={() => setShowDropDown(false)} className='cursor-pointer h-full flex justify-center items-center px-4 border-l-2 border-news-white/25 hover:bg-news-black'>
+            <li onMouseEnter={() => setShowDropDown(true)} onMouseLeave={() => setShowDropDown(false)} className='hidden cursor-pointer h-full lg:flex justify-center items-center px-4 border-l-2 border-news-white/25 hover:bg-news-black'>
                 <div className='font-bold text-lg flex items-center gap-1' href="/">
                     <i class='bx bx-category bx-burst' ></i>
                     <span>CATEGORY</span>
