@@ -18,19 +18,19 @@ const DropDown = () => {
             {
                 showDropDown &&
                 <div onMouseEnter={() => setShowDropDown(true)} onMouseLeave={() => setShowDropDown(false)} className='absolute top-16 right-0 flex flex-col justify-start items-start text-left bg-news-red'>
-                    <li className='cursor-pointer h-full flex justify-start items-center w-full p-4 hover:bg-news-black'>
+                    <li className='z-50 bg-news-red cursor-pointer h-full flex justify-start items-center w-full p-4 hover:bg-news-black'>
                         <Link className='font-bold text-lg flex items-center gap-1' href="/">
                             <i class='bx bx-poll' ></i>
                             <span>POLITICS</span>
                         </Link>
                     </li>
-                    <li className='cursor-pointer h-full flex justify-start items-center w-full p-4 hover:bg-news-black'>
+                    <li className='z-50 bg-news-red cursor-pointer h-full flex justify-start items-center w-full p-4 hover:bg-news-black'>
                         <Link className='font-bold text-lg flex items-center gap-1' href="/">
                             <i class='bx bx-film' ></i>
                             <span>ENTERNTAINMENT</span>
                         </Link>
                     </li>
-                    <li className='cursor-pointer h-full flex justify-start items-center w-full p-4 hover:bg-news-black'>
+                    <li className='z-50 bg-news-red cursor-pointer h-full flex justify-start items-center w-full p-4 hover:bg-news-black'>
                         <Link className='font-bold text-lg flex items-center gap-1' href="/">
                             <i class='bx bx-cricket-ball' ></i>
                             <span>SPORTS</span>

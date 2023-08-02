@@ -10,7 +10,7 @@ const Breaking = () => {
                     <i class='bx bxs-bolt bx-sm md:bx-md bx-flashing'></i>
                     <h2 className='hidden md:block text-xl font-bold'>BREAKING NEWS :</h2>
                 </span>
-                <Marquee>
+                <Marquee pauseOnHover='true'>
                     <ul className='flex justify-center items-center gap-8'>
                         <li>
                             <Link href="/">lorem ipsum something here..</Link>
