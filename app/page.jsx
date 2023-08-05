@@ -1,3 +1,6 @@
+import Haryana from "./home/Haryana"
+import Hero2 from "./home/Hero2"
+import Hero from "./home/hero"
 
 export const metadata = {
   title: 'Cover News - Home',
@@ -8,42 +11,40 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      {/* MAIN SECTION */}
+      {/* Hero */}
       <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
         बड़ी खबर
       </h2>
-      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
-        <div className=" cursor-pointer p-4 bg-news-white flex flex-col gap-2  rounded-md hover:text-news-red">
-          <h1 className="text-4xl font-bold">
-            टमाटरों की महंगाई सुनकर शिल्पा शेट्टी हुई हैरान!
-          </h1>
-          <img className="rounded-md h-[300px] w-full" src="/shilpa.jpg" alt="article thumbnail" width={400} height={400} />
-          <p>
-            टमाटर की कीमत का असर बॉलीवुड सितारों पर भी देखने को मिल रहा है। आपको बता दें, कि शिल्पा शेट्टी ने बढ़ती टमाटर की कीमत को लेकर एक वीडियो शेयर किया। जो की काफी ज्यादा सोशल मीडिया पर वायरल हो रहा है। आम लोगों से जुड़े मुद्दों पर अक्सर फिल्में बनाई जाती हैं,
-            ...<span className="text-news-red">more</span>
-          </p>
-        </div>
-        <div className="cursor-pointer p-4 bg-news-white flex flex-col gap-2  rounded-md hover:text-news-red">
-          <h1 className="text-4xl font-bold">
-            ज्ञानवापी परिसर पर योगी का बयान आया सामने
-          </h1>
-          <img className="rounded-md h-[300px] w-full" src="/yogi.jpg" alt="article thumbnail" />
-          <p>
-            ज्ञानवापी परिसर पर चल रहे विवादों के बीच आए दिन नए प्रारूप सामने आते रहते हैं। कभी ज्ञानवापी की जांच सक्रिय हो जाती है तो फिर से निष्क्रिया हो जाती है। ऐसे में उत्तर प्रदेश के मुख्यमंत्री योगी आदित्यनाथ का बयान भी सामने आया है। उनका कहना है हीं हैं।
-            ...<span className="text-news-red">more</span>
-          </p>
-        </div>
-        <div className="cursor-pointer p-4 bg-news-white flex flex-col gap-2  rounded-md hover:text-news-red">
-          <h1 className="text-4xl font-bold">
-            टमाटरों की महंगाई सुनकर शिल्पा शेट्टी हुई हैरान!
-          </h1>
-          <img className="rounded-md h-[300px] w-full" src="/kis.jpg" alt="article thumbnail" />
-          <p>
-            टमाटर की कीमत का असर बॉलीवुड सितारों पर भी देखने को मिल रहा है। आपको बता दें, कि शिल्पा शेट्टी ने बढ़ती टमाटर की कीमत को लेकर एक वीडियो शेयर किया। जो की काफी ज्यादा सोशल मीडिया पर वायरल हो रहा है। आम लोगों से जुड़े मुद्दों पर अक्सर फिल्में बनाई जाती हैं,
-            ...<span className="text-news-red">more</span>
-          </p>
-        </div>
-      </section>
+      <Hero />
+      {/* Haryana */}
+      <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
+        हरियाणा
+      </h2>
+      {/* National */}
+      <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
+        देश
+      </h2>
+      {/* International */}
+      <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
+        विदेश
+      </h2>
+      {/* Politics */}
+      <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
+        राजनीती
+      </h2>
+      {/* Sports */}
+      <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
+        खेल
+      </h2>
+      {/* Entertainment */}
+      <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
+        मनोरंजन
+      </h2>
+      {/* Technology */}
+      <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
+        प्रौद्योगिकी
+      </h2>
+      <Hero2 />
     </>
   )
 }

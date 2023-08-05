@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Breaking />
         <main className='flex flex-col items-center'>
-          <div className="text-news-black w-full max-w-7xl px-4 md:px-8 bg-news-red/5">
+          <div className="text-news-black w-full max-w-7xl px-4 md:px-8 box-content bg-news-red/5">
             {children}
           </div>
         </main>

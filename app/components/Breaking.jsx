@@ -13,16 +13,16 @@ const Breaking = () => {
                 <Marquee pauseOnHover='true'>
                     <ul className='flex justify-center items-center gap-8'>
                         <li>
-                            <Link href="/">lorem ipsum something here..</Link>
+                            <Link href="/">टमाटरों की महंगाई सुनकर शिल्पा शेट्टी हुई हैरान!</Link>
                         </li>
                         <li>
-                            <Link href="/">lorem ipsum something here..</Link>
+                            <Link href="/">टमाटरों की महंगाई सुनकर शिल्पा शेट्टी हुई हैरान!</Link>
                         </li>
                         <li>
-                            <Link href="/">lorem ipsum something here..</Link>
+                            <Link href="/">टमाटरों की महंगाई सुनकर शिल्पा शेट्टी हुई हैरान!</Link>
                         </li>
                         <li>
-                            <Link href="/">lorem ipsum something here..</Link>
+                            <Link href="/">टमाटरों की महंगाई सुनकर शिल्पा शेट्टी हुई हैरान!</Link>
                         </li>
                     </ul>
                 </Marquee>
