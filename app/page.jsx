@@ -1,6 +1,6 @@
 import Haryana from "./home/Haryana"
 import Hero2 from "./home/Hero2"
-import Hero from "./home/hero"
+import Hero from "./home/Hero"
 
 export const metadata = {
   title: 'Cover News - Home',
