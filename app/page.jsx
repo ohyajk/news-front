@@ -1,6 +1,7 @@
 import Haryana from "./home/Haryana"
 import Hero2 from "./home/Hero2"
 import Hero from "./home/Hero"
+import api from "@/api/api"
 
 export const metadata = {
   title: 'Cover News - Home',
@@ -8,14 +9,22 @@ export const metadata = {
   path: '/',
 }
 
-export default function Home() {
+export default async function Home() {
+  const fetcher = await fetch(api, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+
+    }
+  })
+  const data = await fetcher.json()
   return (
     <>
       {/* Hero */}
       <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
         बड़ी खबर
       </h2>
-      <Hero />
+      <Hero data={data} />
       {/* Haryana */}
       <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
         हरियाणा

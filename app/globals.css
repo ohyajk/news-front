@@ -14,3 +14,12 @@
 .bx-burst {
   animation-iteration-count: 1;
 }
+
+.content table tr td {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.content td {
+  padding: 10px;
+}

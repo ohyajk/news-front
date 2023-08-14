@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className='h-full w-full flex justify-between items-center gap-8'>
                     {/* LOGO OR TEXT */}
                     <div className=''>
-                        <h1 className='font-extrabold text-2xl lg:text-3xl whitespace-nowrap'>COVER NEWS</h1>
+                        <h1 className='font-extrabold text-2xl lg:text-3xl whitespace-nowrap'>NEWS LOGO</h1>
                     </div>
                     {/* MENU OR LINKS */}
                     <ul className='h-full w-full hidden md:flex justify-center items-center relative'>
