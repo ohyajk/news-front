@@ -1,8 +1,19 @@
+import api from '@/api/api'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Hero = ({ data }) => {
+const Hero = async () => {
+
+    const fetcher = await fetch(api, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+
+        }
+    }, { cache: 'no-store' })
+    const data = await fetcher.json()
+
     return (
         < section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2" >
             {

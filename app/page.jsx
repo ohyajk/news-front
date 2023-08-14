@@ -9,22 +9,18 @@ export const metadata = {
   path: '/',
 }
 
-export default async function Home() {
-  const fetcher = await fetch(api, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
+export const dynamic = 'force-dynamic'
 
-    }
-  })
-  const data = await fetcher.json()
+
+export default async function Home() {
+
   return (
     <>
       {/* Hero */}
       <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
         बड़ी खबर
       </h2>
-      <Hero data={data} />
+      <Hero />
       {/* Haryana */}
       <h2 className="my-2 py-2 px-4 bg-news-red text-news-white text-2xl font-bold w-fit">
         हरियाणा
