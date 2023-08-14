@@ -9,13 +9,13 @@ const page = async ({ params }) => {
     const data = await fetcher.json()
     const p = data[0]
 
-    const categoryFetcher = await fetch(`${categoryApi}${p.categories[0]}`, { cache: 'no-store' })
-    const categoryData = await categoryFetcher.json()
-    const category = categoryData.name
+    // const categoryFetcher = await fetch(`${categoryApi}${p.categories[0]}`, { cache: 'no-store' })
+    // const categoryData = await categoryFetcher.json()
+    // const category = categoryData.name
 
-    const authorFetcher = await fetch(`${authorApi}${p.author}`, { cache: 'no-store' })
-    const authorData = await authorFetcher.json()
-    const author = authorData.name
+    // const authorFetcher = await fetch(`${authorApi}${p.author}`, { cache: 'no-store' })
+    // const authorData = await authorFetcher.json()
+    // const author = authorData.name
 
     return (
         <>
@@ -28,7 +28,7 @@ const page = async ({ params }) => {
                 <span>/</span>
                 <button className='flex items-center gap-1 hover:text-news-red'>
                     <i class='bx bxs-castle bx-burst' ></i>
-                    <h6 className='font-bold'>{category}</h6>
+                    <h6 className='font-bold'>National</h6>
                 </button>
                 <span>/</span>
                 <h6>{p.slug}</h6>
@@ -44,7 +44,7 @@ const page = async ({ params }) => {
                     <div>
                         <button className='flex justify-start items-center text-lg gap-1'>
                             <i className='bx bxs-user-circle bx-sm'></i>
-                            <h6 className='font-semibold'>{author}</h6>
+                            <h6 className='font-semibold'>Admin</h6>
                         </button>
                     </div>
                 </div>
