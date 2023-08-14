@@ -4,6 +4,8 @@ import categoryApi from '@/api/categoryApi'
 import Image from 'next/image'
 import React from 'react'
 
+export const dynamic = 'force-dynamic'
+
 const page = async ({ params }) => {
     const fetcher = await fetch(`${api}?slug=${params.slug}}`, { cache: 'no-store' })
     const data = await fetcher.json()
