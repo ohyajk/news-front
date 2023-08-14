@@ -5,15 +5,15 @@ import Image from 'next/image'
 import React from 'react'
 
 const page = async ({ params }) => {
-    const fetcher = await fetch(`${api}?slug=${params.slug}}`)
+    const fetcher = await fetch(`${api}?slug=${params.slug}}`, { cache: 'no-store' })
     const data = await fetcher.json()
     const p = data[0]
 
-    const categoryFetcher = await fetch(`${categoryApi}${p.categories[0]}`)
+    const categoryFetcher = await fetch(`${categoryApi}${p.categories[0]}`, { cache: 'no-store' })
     const categoryData = await categoryFetcher.json()
     const category = categoryData.name
 
-    const authorFetcher = await fetch(`${authorApi}${p.author}`)
+    const authorFetcher = await fetch(`${authorApi}${p.author}`, { cache: 'no-store' })
     const authorData = await authorFetcher.json()
     const author = authorData.name
 
